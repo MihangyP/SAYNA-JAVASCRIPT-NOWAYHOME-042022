@@ -6,8 +6,7 @@
 }
 
 #hero{
-    background-image: url("../img/img1.png");
-    background-color: var(--primary-ad-color);
+    background-image: linear-gradient(to bottom, #000000, #310f17, #5c0f1f, #870c1e, #b11313);
     height: 870px;
     background-repeat: no-repeat;
     background-position: center right;
@@ -53,12 +52,68 @@
 .menu-underline {
     text-decoration: underline!important;
 }
+
+.marvel{
+    position: absolute;
+    top: 100px;
+    right: 50px;
+    opacity: 0;
+    transform: translateX(-400px);
+}
+
+.spider {
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+/* effet fade in sur MARVEL */
+.marvel-reveal {
+    opacity: 1;
+    transform: translateX(0);
+    transition: 1s cubic-bezier(.54,0,0,1);
+}
+
+/* pop-up après avoir clicqué sur envoyé */
+.pop-up:first-child{
+    background: var(--blue-color);
+}
+.pop-up {
+    width: 100%;
+    height: auto;
+    font-weight: bold;
+    padding: 30px 20px;
+    background:var(--primary-ad-color);
+    display: none;
+    position: relative;
+}
+.annuler{
+    background: red;
+    width: 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.none {
+    display: none;
+}
+.block {
+    display: block;
+}
+
+/* effet zoom sur les img spider */
+
+.scale {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
 .button1{
     background-color: var(--white-ad-color);
     color: var(--primary-ad-color);
     border-radius: 40px;
     padding: 15px 20px;
-    
 }
 .cta .button2{
     border: var(--white-ad-color) 2px solid;
@@ -90,6 +145,7 @@
     background-size: auto;
     background-repeat: no-repeat;
     padding: 20px 0;
+
 }
 
 h1{
@@ -148,7 +204,5 @@ input[type=submit]{
     background-color: white;
     color: #000000;
 }
-
-
 
 

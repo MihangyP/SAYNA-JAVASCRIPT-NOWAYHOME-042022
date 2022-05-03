@@ -50,14 +50,14 @@ for(let i = 0; i < bouttons.length ; i++) { // on parcours tous les bouttons
 
 //Effet de survole  sur les icones au footer
 
-// let icons = document.getElementsByClassName('icons');
-// console.log(icons);
-// for(let i = 0; i < icons.length; i++) {
-//     let icon = icons[i];
-//     icon.addEventListener('mouseover', function () {
+let icons = document.getElementsByClassName('icons');
+console.log(icons);
+for(let i = 0; i < icons.length; i++) {
+    let icon = icons[i];
+    icon.addEventListener('mouseover', function () {
       
-//     });
-// } 
+    });
+} 
 
 
 //Apparition avec un fade in de gauche à droite avec tous les titres 
@@ -107,9 +107,11 @@ const menus =  document.querySelectorAll('.menu');
 for(let i = 0; i < menus.length ; i++) {
     const menu = menus[i];
     menu.addEventListener('mouseover', function () {
-        this.classList.add('menu-underline');
+        menu.classList.add('menu-underline');
     })
     menu.addEventListener('mouseout', function () {
-        this.classList.remove('menu-underline');
+        menu.classList.remove('menu-underline');
     })
 }
+
+

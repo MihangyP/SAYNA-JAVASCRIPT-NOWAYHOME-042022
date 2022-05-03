@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/adversaires.css">
     <link rel="stylesheet" href="./assets/css/index.css">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fin -->
     <title>Spiderman - Accueil</title>
 </head>
 <body>
@@ -34,6 +37,8 @@
     </header>
     <main>
         <section id="hero" >
+            <img class="marvel" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/home1.png" alt="">
+            <img class="spider" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/home2.png" alt="">
             <div class="conteneur">
                 <nav>
                     <div class="brand-mobile">
@@ -110,7 +115,13 @@
                     <p class="sous-titre">Rempli le formulaire ci dessous afin de recevoir ton propre costume.</p>
                 </div>
                 <div class="spiderman-formulaire text-center ">
-                    <form action="" method="">
+                    <div class="pop-up">
+                        <div class="annuler">X</div>
+                        <h3>Formulaire envoyé</h3>
+                        <p>Vous aurez votre costume pesonnalisé bientôt</p>
+                        <p>N'empêche, ous êtes déjà un : <br> Spiderman</p>
+                    </div>
+                    <form id="costume" action="" method="">
                         <input class="form-spiderman" type="text" placeholder="Nom">
                         <input class="form-spiderman" type="text" placeholder="Prenom" >
                         <input class="form-spiderman" type="text" placeholder="Taille(cm)">
@@ -133,7 +144,13 @@
                         </p>
                     </div>
                     <div class="newsletter-formulaire text-center ">
-                        <form action="" method="">
+                        <div class="pop-up">
+                            <div class="annuler">X</div>
+                            <h3>Formulaire envoyé</h3>
+                            <p>Vous aurez votre costume pesonnalisé bientôt</p>
+                            <p>N'empêche, vous êtes déjà un : <br> Spiderman</p>
+                        </div>
+                        <form  id="news" action="" method="">
                             <input class="form-newsletter" type="text" placeholder="Nom">
                             <div>
                             <input class="form-newsletter" type="email" name="" id="" placeholder="Adresse email">
@@ -194,6 +211,8 @@
 
     <!-- lien vers le fichier global.js -->
     <script src="./../JS/global.js"></script>
+    <!-- lien vers le fichier index.js -->
+    <script src="./../JS/index.js"></script>
 
 </body>
 </html>
