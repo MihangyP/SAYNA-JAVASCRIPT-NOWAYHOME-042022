@@ -42,7 +42,33 @@
     text-decoration: underline!important;
 }
 
+.zoom-active {
+    transform: scale(1.1);
+    transition: .4s;
+}
 
+.slider img {
+    width: 280px;
+    height: auto;
+    display: none;
+}
+img.active {
+    display: block;
+}
+
+.précédent , .suivant {
+    color: var(--red-color);
+}
+.précédent {
+    position: relative;
+    bottom: 38px;
+    left: 20px;
+}
+.suivant {
+    position: relative;
+    left: 253px;
+    bottom: 62px;
+}
 /* Design de la partie Valeurs */
 
 #valeurs, #heros-info, #entourage{

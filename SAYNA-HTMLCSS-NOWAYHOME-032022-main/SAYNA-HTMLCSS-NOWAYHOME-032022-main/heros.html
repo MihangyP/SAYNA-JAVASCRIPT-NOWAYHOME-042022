@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./assets/css/adversaires.css">
     <link rel="stylesheet" href="./assets/css/heros.css">
+    <!-- lien cdn font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Spiderman - Heros</title>
 </head>
 <body>
@@ -120,10 +122,10 @@
                 <div class="row">
                     <div class="col-md-6">
                         <div class="entourage-image1">
-                            <img class="img-fluid" src="./assets/img/img21.png" alt="">
+                            <img class="img-fluid zoom" src="./assets/img/img21.png" alt="">
                         </div>
                         <div class="entourage-image2">
-                            <img class="img-fluid" src="./assets/img/img22.png" alt="">
+                            <img class="img-fluid zoom" src="./assets/img/img22.png" alt="">
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -141,9 +143,9 @@
                     </div>
                     <div class="col-md-6">
                         <div class="text-center pt-5 entourage3-img">
-                            <img class="img-fluid p-2" src="./assets/img/img23.png" alt="">
-                            <img class="img-fluid p-2" src="./assets/img/img24.png" alt="">
-                            <img class="img-fluid p-2" src="./assets/img/img25.png" alt="">
+                            <img class="img-fluid p-2 zoom" src="./assets/img/img23.png" alt="">
+                            <img class="img-fluid p-2 zoom" src="./assets/img/img24.png" alt="">
+                            <img class="img-fluid p-2 zoom" src="./assets/img/img25.png" alt="">
                         </div>
                     </div>
                 </div>
@@ -156,20 +158,32 @@
                         <h1 class="text-uppercase text-white pb-4 reveal">les Avengers</h1>
                         <div class="">
                             <div class="row">
-                                <div class="col-md-5">
-                                    <img class="avengers-img" src="./assets/img/img26.png"  alt="">
-                                    <img class="avengers-img" src="./assets/img/img26.png"  alt="">
-                                </div>
+                                <!-- <div class="col-md-5">
+                                    <img class="avengers-img zoom" src="./assets/img/img26.png"  alt="">
+                                    <img class="avengers-img zoom" src="./assets/img/img26.png"  alt="">
+                                </div> -->
                                 <div class="col-md-6 text-white">
                                     <p class="avengers-text">Avec Captain America : Civil War, Tony Stark a fait de Spiderman un membre honoraire des Avengers. Un statut qui lui a ensuite été octroyé définitivement dans Avengers : Infinity War et la menace Thanos. Mais durant ce laps de temps, Peter Parker s'est focalisé sur sa communauté en devenant "la petite araignée de quartier". Deux années d'expérience supplémentaires qui ont permis au jeune homme d'acquérir la maturité nécessaire pour devenir celui que les Avengers attendaient. <br>
                                        <br> Toutefois, Spiderman combat des menaces principalement sur Terre, car c’est son terrain de prédilection. Un nouveau groupe risque de voir le jour avec Dardevil, Luke Cage, Jessica Jones et Iron Fist : Les Defenders. On verra où tout cela nous mène ! </p>
                                 </div>
                             </div> 
                         </div>
-                            <img class="avengers-img" src="./assets/img/img26.png"  alt="">
-                            <img class="avengers-img" src="./assets/img/img26.png"  alt="">
-                            <img class="avengers-img" src="./assets/img/img26.png"  alt="">
-                            <img class="avengers-img" src="./assets/img/img26.png"  alt="">
+                            <div class="parent">
+                                <div class="slider">
+                                      <img class="active zoom" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/heroslider3.png" alt="">
+                                      <img class="zoom" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/heroslider2.png" alt="">
+                                      <img class="zoom" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/heroslider1.png" alt="">
+                                      <img class="zoom" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/heroslider4.png" alt="">
+                                      <img class="zoom" src="./../../Assets-PROJET-NO-WAY-HOME-JAVASCRIPT/Assets/heroslider5.png" alt="">
+                                     
+                                      <div class="précédent"><i class="fa-solid fa-caret-left"></i></div>
+                                      <div class="suivant"><i class="fa-solid fa-caret-right"></i></div>
+                                </div>
+                            </div>
+                           
+                            <!-- <img class="avengers-img zoom" src="./assets/img/img26.png"  alt="">
+                            <img class="avengers-img zoom" src="./assets/img/img26.png"  alt="">
+                            <img class="avengers-img zoom" src="./assets/img/img26.png"  alt=""> -->
                         </div>
                     </div>
                     <div class="col-md-6">
@@ -239,6 +253,7 @@
 
      <!-- lien vers le fichier global.js -->
      <script src="./../JS/global.js"></script>
+     <script src="./../JS/héros.js"></script>
 
 </body>
 </html>

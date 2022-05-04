@@ -51,6 +51,7 @@
 }
 
 
+
 /* Design de la partie Antenne */
 
 #antenne{
@@ -80,6 +81,23 @@
 #antenne form{
     display: flex;
     flex-direction: column;
+}
+.formulaire .pop {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    text-align: center;
+    display: none;
+}
+.visible {
+    display: block!important;
+}
+.pop .annuler {
+    background: red;
+    width: 20px;
+    text-align: center;
 }
 
 #antenne .formulaire{

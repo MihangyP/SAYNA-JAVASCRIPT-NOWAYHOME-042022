@@ -72,3 +72,4 @@ for(let i = 0; i < imgSpider.length; i++) {
        spider.classList.remove('scale');
     })
 }
+
