@@ -107,11 +107,23 @@ const menus =  document.querySelectorAll('.menu');
 for(let i = 0; i < menus.length ; i++) {
     const menu = menus[i];
     menu.addEventListener('mouseover', function () {
-        menu.classList.add('menu-underline');
+        menu.classList.add('menu-lineThought');
     })
     menu.addEventListener('mouseout', function () {
-        menu.classList.remove('menu-underline');
+        menu.classList.remove('menu-lineThought');
     })
 }
 
+//effet hover sur les icons du footer
+
+const iconsFoot = document.querySelectorAll('.media .fa-brands');
+for(let i = 0; i < iconsFoot.length ; i++) {
+    let icon = iconsFoot[i];
+    icon.addEventListener('mouseover', function () {
+        icon.style.color = 'white';
+    })
+    icon.addEventListener('mouseout', function () {
+        icon.style.color = 'black';
+    })
+}
 

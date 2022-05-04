@@ -49,8 +49,8 @@
     transition: 1.5s;
 }
 /* effet surligné sur les menus */
-.menu-underline {
-    text-decoration: underline!important;
+.menu-lineThought {
+    text-decoration: line-through!important;
 }
 
 .marvel{
@@ -65,6 +65,7 @@
     position: absolute;
     top: 150px;
     right: 0;
+    z-index: 10;
 }
 
 /* effet fade in sur MARVEL */
@@ -75,9 +76,6 @@
 }
 
 /* pop-up après avoir clicqué sur envoyé */
-.pop-up:first-child{
-    background: var(--blue-color);
-}
 .pop-up {
     width: 100%;
     height: auto;
@@ -109,6 +107,45 @@
     transition: 0.5s;
 }
 
+.media {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.media .fa-brands{
+    background-color: var(--primary-ad-color);
+    color: var(--black-ad-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+.audio{
+    margin-top: 50px;
+}
+.audio-img img{
+    height: 130px;
+    width: 120px;
+}
+
+.bold{
+    font-weight: bold;
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
+.vide {
+    margin-left: 20px;
+}
+.plein {
+    display: none;
+    margin-left: 20px;
+}
+.plein-visible{
+    display: inline-block;
+}
+.fixe{
+    position: fixed;
+}
 .button1{
     background-color: var(--white-ad-color);
     color: var(--primary-ad-color);

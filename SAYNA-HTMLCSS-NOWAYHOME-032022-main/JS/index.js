@@ -20,6 +20,32 @@
 // }
 // const observer3 = new IntersectionObserver(fadeIn3, options);
 // observer3.observe(document.getElementsByClassName('marvel'));
+
+
+//effet sur heart(audio)
+const heart = document.querySelector('.vide');
+const heartPlein = document.querySelector('.plein');
+heart.addEventListener('click', function () {
+    heart.style.display = 'none';
+    heartPlein.classList.add('plein-visible');
+})
+heartPlein.addEventListener('click', function () {
+    heartPlein.classList.remove('plein-visible');
+    heart.style.display = 'inline-block';
+})
+
+
+//effet sur l'image spiderman
+const spider = document.querySelector('.spider');
+window.addEventListener('scroll', function () {
+    spider.classList.add('fixe');
+})
+
+
+
+
+
+//les pop-ups
  
 const news = document.getElementById('news');
 const costume = document.getElementById('costume');

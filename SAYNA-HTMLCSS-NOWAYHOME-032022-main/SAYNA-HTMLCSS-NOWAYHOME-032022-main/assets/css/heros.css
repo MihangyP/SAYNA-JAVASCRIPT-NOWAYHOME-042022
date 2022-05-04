@@ -69,6 +69,17 @@ img.active {
     left: 253px;
     bottom: 62px;
 }
+
+.media {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.media .fa-brands{
+    background-color: var(--primary-ad-color);
+    color: var(--black-ad-color);
+    padding: 15px;
+    border-radius: 50%;
+}
 /* Design de la partie Valeurs */
 
 #valeurs, #heros-info, #entourage{

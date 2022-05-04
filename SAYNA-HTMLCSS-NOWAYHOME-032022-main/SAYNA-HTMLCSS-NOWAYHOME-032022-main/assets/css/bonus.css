@@ -43,6 +43,17 @@
     text-decoration: underline!important;
 }
 
+.media {
+    padding: 15px;
+    margin-bottom: 10px;
+}
+.media .fa-brands{
+    background-color: var(--primary-ad-color);
+    color: var(--black-ad-color);
+    padding: 15px;
+    border-radius: 50%;
+}
+
 /* Mobile version footer2 page Bonus */
 
 @media screen and (max-width:600px) {
